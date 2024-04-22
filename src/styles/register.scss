@@ -1,0 +1,150 @@
+.register-page{
+    background-color: #b7d9e2;
+    text-align: left;
+    height: 100vh;
+    background-size: cover;
+}
+.register{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  
+}
+
+.register-inside{
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 100%;
+  align-items: stretch;
+  box-shadow: 0 0 15px 4px #161933;
+  margin: 5% 20%;
+}
+
+.register-left{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #446068;
+  overflow: hidden;
+}
+
+.register-left{
+    padding: 30px;
+  width: 50%;
+  height: 15%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.register-right{
+    padding: 30px;
+  width: 50%;
+  height: 15%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #6791ad;
+}
+
+.register-left-inside{
+    font-family: 'League Spartan';
+    font-size: 120px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    line-height: 1em;
+}
+
+.register-left-text{
+    font-family: 'Sanchez';
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+.register-title{
+  text-align: left;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='date'],
+select {
+  margin-bottom: 7%;
+  margin-top: 3%;
+  margin-left: 7%;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  width: 80%;
+  height: 60px;
+  background-color: white;
+
+}
+
+.seconds-and-generate-button{
+  display: flex;
+  align-items: right;
+  .register-btn{
+    width: 120%;
+    height: 80%;
+  }
+}
+
+.register-label{
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+label{
+  margin-left: 7%;
+}
+
+.register-btn{
+  background-color: #446068;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 32px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+.register-btn:disabled{
+  background-color: #646869;
+  cursor:auto;
+}
+
+.eye-btn{
+  width: 100%;
+}
+
+.btn-eye{
+  margin-left: 2%;
+  border-radius: 100%;
+  background-color: #b7e2d5;
+  width: 9%;
+  font-size: 20%;
+  cursor: pointer;
+}
+
+.login-info{
+  color: white;
+  font-size: 33px;
+  margin-left: 7%;
+  margin-bottom: 6.5%;
+}
+
+.error-div{
+  padding-left: 10%;
+  font-family: 'Sanchez';
+}

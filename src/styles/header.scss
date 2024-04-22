@@ -1,0 +1,44 @@
+.header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    background-color: #b7d9e2;
+    box-shadow: 0 -6px 15px 5px rgba(0,0,0,0.5);
+}
+.logo{
+    margin-bottom: 10px;
+}
+.main-logo {
+    padding-left: 5%;
+    width:52%;
+    height: 100%;
+}
+.header-menu{
+    list-style-type: none;
+    text-align: right;
+    padding-bottom: 0;
+    margin-right: 20px;
+}
+.header-menu li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 1%;
+  }
+.main-btn{
+    background-color: #446068;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 32px;
+    cursor: pointer;
+}
+.main-btn:hover,
+.main-btn:active,
+.main-btn:focus,
+.upload-label:hover {
+  transform: scale(1.1);
+}
