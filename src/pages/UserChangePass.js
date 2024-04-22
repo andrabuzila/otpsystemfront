@@ -9,7 +9,7 @@ const UserChangePass = () => {
 
     }
 
-    const onLoginClicked = () => {
+    const onChangeClicked = () => {
 
     }
 
@@ -36,7 +36,7 @@ const UserChangePass = () => {
                                 <button className='btn-eye' onClick={onEyePassClicked}><img className='eye-btn' src={Eye} alt="eye"/></button>
                             </div>
                             
-                            <button className='register-btn' onClick={onLoginClicked}>Login</button>
+                            <button className='register-btn' onClick={onChangeClicked}>Change</button>
                         </div>
                     </div>
             </div>

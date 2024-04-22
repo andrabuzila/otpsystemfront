@@ -28,7 +28,7 @@ const Login = () => {
       if (isLoggedIn || isLoggedIn === null) {
         navigate('/');
       }
-      // eslint-disable-next-line
+      
     }, [isLoggedIn]);
   
     const onEmailChanged = (value) => {
