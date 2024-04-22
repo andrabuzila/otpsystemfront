@@ -163,7 +163,7 @@ const Register = () => {
         try {
             const response = await getRequest('/User/GeneratePass');
             
-            const decoded = jwtDecode(response.data.password);
+            const decoded = jwtDecode(response.data.passToken);
             const pass = decoded["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/hash"]
             if (pass !== null && pass !== "") {
                 

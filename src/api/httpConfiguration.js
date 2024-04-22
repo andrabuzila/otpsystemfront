@@ -11,7 +11,7 @@ export const getBaseUrl = () => {
 };
 
 const getToken = () => {
-  const localToken = localStorage.getItem("LOCAL_STORAGE_TOKEN_KEY");
+  const localToken = localStorage.getItem("token");
   return localToken ? `Bearer ${localToken}` : null;
 };
 

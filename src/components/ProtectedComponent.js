@@ -7,7 +7,7 @@ import { errorNotify } from './notification/NotificationSystem';
 
 const ProtectedComponent = ({ children }) => {
   const [alreadyRegistered, setAlreadyRegistered] = useState(null);
-  const { isLoggedIn, userId } =
+  const { isLoggedIn } =
     useContext(AppContext);
 
   const verifyRegistration = async () => {
@@ -29,13 +29,13 @@ const ProtectedComponent = ({ children }) => {
   }, [userId]);
 
   if (alreadyRegistered !== null) {
-    if (!firstStepFinished || !secondStepFinished || alreadyRegistered) {
+    if ( alreadyRegistered) {
       if (isLoggedIn !== null) {
         if (isLoggedIn === false) {
-          return <Navigate to={PAGES_URL.Home} />;
+          return <Navigate to={'/'} />;
         }
       } else {
-        return <Navigate to={PAGES_URL.Home} />;
+        return <Navigate to={'/profile'} />;
       }
     }
     return children;
